@@ -25,9 +25,9 @@ const ReviewList = () => {
         <div>We don&apos;t have any reviews for this movie.</div>
       ) : (
         <ul className={css.reviewList}>
-          {reviews.map(({ id, author, content }) => {
-            <ReviewListItem key={id} author={author} content={content} />;
-          })}
+          {reviews.map(({ id, author, content }) => (
+            <ReviewListItem key={id} author={author} content={content} />
+          ))}
         </ul>
       )}
     </>
